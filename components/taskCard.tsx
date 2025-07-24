@@ -27,6 +27,6 @@ interface TaskData {
   owner: string[]
   columnId: string
   id: string
-  edit: (id)=>void;
+  edit: ()=>void;
   refresh: ()=>void;
 }
