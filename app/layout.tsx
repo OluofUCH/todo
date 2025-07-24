@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/sidebar"
-import Header from "@/components/header"
+import Sidebar from "@/components/navBar/sidebar"
+import Header from "@/components/header/header"
 
 const poppinsFont = Poppins({
   weight: ["100", "200" , "300" , "400" , "500" , "600" , "700" , "800" ,"900" ],

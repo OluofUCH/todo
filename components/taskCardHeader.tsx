@@ -1,7 +1,7 @@
 'use client'
 import {useState} from 'react'
 import React from 'react'
-import Options from './options'
+import Options from "@/components/ui/options"
 import Image from 'next/image'
 
 export default function Taskcardheader(props: header) {
@@ -23,12 +23,12 @@ setShowOptions(true)
         </div>
 
         <div>
-            <button className='font-[500] text-black text-22px tracking-[0%] leading-[100%]' onClick={handleShowOptions}>
+            <button className='font-[500] cursor-pointer text-black text-22px tracking-[0%] leading-[100%]' onClick={handleShowOptions}>
               <div className="relative">
-                                           <Image src="/images/png/menu.png" height="10" width="10" className="h-[4px] w-auto" alt="icon"/>
+              <Image src="/images/svg/menu.svg" height="10" width="10" className="h-[2px] w-[16px]" alt="icon"/>
                                            </div>
             </button>
-        {showOptions && <Options id={props.id}  columnId={props.columnId} cancel={handleCancel} refresh={props.refresh}/>}
+        {showOptions && <Options id={props.id}  columnId={props.columnId} cancel={handleCancel} edit={props.edit} refresh={props.refresh}/>}
         </div>
     </div>
   )
@@ -39,4 +39,5 @@ interface header{
   id: string;
   columnId: string;
   refresh: ()=>void;
+  edit: ()=>void;
 }

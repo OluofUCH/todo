@@ -11,7 +11,7 @@ function Logoutbtn() {
 <path d="M19 10H7" stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
                     </div>
-            <p className="text-black text-[16px] font-medium tracking-[0%] leading-[100%] ">Log out</p>
+            <p className="text-black hidden sm:block text-[16px] font-medium tracking-[0%] leading-[100%] ">Log out</p>
         </button>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "./navBar"
 import Logo from "./logo"
-import Logoutbtn from "./logoutBtn"
+import Logoutbtn from "@/components/ui/logoutBtn"
 
 function Sidebar() {
   return (
